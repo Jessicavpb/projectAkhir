@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- Style personal -->
+    <style type="text/css">
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 25;
+        }
+
+        .jumbotron img {
+            width: 300px;
+            border: 5px solid #333;
+        }
+
+        .sub-title {
+            text-transform: uppercase;
+        }
+
+        hr {
+            width: 100px;
+            border-top: 2px solid black;
+        }
+
+        .portfolio img {
+            width: 500px;
+            /*height: 200px;*/
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        footer {
+            height: 50px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+
+    <title>Isyana Portfolio</title>
+  </head>
+  <body>
+    <!-- Navigasi Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" >
+      <a class="navbar-brand logo" href="#">My Portfolio</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:5000/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="https://www.instagram.com/sarasvatistage/">Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of Navigasi Bar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <img src="{{url_for('static', filename='img/profil2.jpg')}}" class="rounded-circle"> 
+        <h1 class="display-4">Isyana Sarasvati</h1>
+        <p class="lead">Musician | Composer</p>
+      </div>
+    </div>
+    <!-- End of Jumbotron -->
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="sub-title">About</h2>
+                    <hr>
+                </div>
+            <div class="row">
+                <div class="col-6">
+                   Isyana Sarasvati (lahir di Bandung, 2 Mei 1993; umur 27 tahun) merupakan penyanyi dan pencipta lagu berkebangsaan Indonesia. Isyana merupakan lulusan dari Nanyang Academy of Fine Arts, Singapura dan Royal College of Music, Britania Raya.[1][3] Isyana yang mengkompos sendiri semua lagunya[4] juga pernah menjadi penyanyi opera di Singapura.[5][6] Dia telah mendapatkan penghargaan sebagai "Best Asian Artist Indonesia 2016, Best Composer of the Year 2017" dari MAMA Awards dan dinobatkan dalam "30 Under 30 Asia 2020" oleh Forbes.
+                   <br>
+                   <br>
+                   Sebelum publik mengenalnya sebagai penyanyi pop dan penulis lagu, Isyana lebih dulu terjun di dunia musik klasik sebagai solois dan resitalis. Ia juga telah berpartisipasi dalam berbagai kompetisi musik. Prestasinya termasuk menjadi komposer terbaik pada usia 15 tahun, salah satunya menciptakan komposisi lagu yang bertajuk "Wings of Your Shadow", lagu tersebut terpilih sebagai komposisi terbaik dan masuk kedalam Top 12 electonis dari 3.500 peserta anak-anak di dunia pada International Junior Original Concert. Sebagai hasilnya, ia terpilih untuk konser pada IJOC 2008 di Bunkamura Hall, Tokyo, Jepang.[7] Isyana bergabung dengan Sony Music Indonesia pada tahun 2014 dan mulai merilis 2 single, "Keep Being You" (2014) dan "Tetap Dalam Jiwa" (2015). Ia juga telah merilis 3 album yang banyak mendapat respon positif dan sukses di pasaran.
+                </div>
+                <div class="col-6">
+                    Pada 2 September 2018, di Asian Games 2018 ke-18 Jakarta-Palembang, Indonesia, Isyana menjadi penampil pertama dalam Closing Ceremony Asian Games dengan lagu "Asia's Who We Are" di hadapan lebih dari 55.000 audiens di Stadion Utama Gelora Bung Karno.[9] Pada Mei 2019, Walt Disney Pictures menggandeng Isyana bersama Gamaliel Tapiheru untuk menyanyikan lagu soundtrack di film Disney, Aladdin yang berjudul "A Whole New World" versi Indonesia, namun tetap menggunakan Bahasa Inggris. Mereka berdua pun secara langsung mewawancarai Alan Menken selaku komposer dalam film-film Walt Disney Animation Studios di Tokyo, Jepang.[10] Di bulan Juli 2019, Isyana resmi menjadi juri The Voice Indonesia menggantikan posisi Anggun bersama juri bertahan lainnya seperti Armand Maulana, Titi DJ, Nino RAN & Vidi Aldiano.[11]
+                    <br>
+                    <br>
+                    LEXICON menjadi album ketiga Isyana Sarasvati setelah merilis album Explore! yang dirilis pada November 2015 dan Paradox pada September 2017. Menurut Isyana, Lexicon mempunyai makna tersendiri, yang berarti kamus. Berbeda dari 2 album sebelumnya yang ber genre Pop dan R&B, album LEXICON mengusung tema teatrikal dimana genre classic atau opera adalah jati diri Isyana yang sesungguhnya. Semua lagu di album LEXICON berunsur neo classic (semi klasik) dan 1 lagu dengan genre progressive rock yang berjudul "Lexicon". Di album ini Isyana berani menampilkan sisi idealisnya.
+    
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of about -->
+
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="sub-title">Portfolio</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <br>
+                    <a href="#">
+                        <img src="{{url_for('static', filename='img/nafa.jpg')}}">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#">
+                        <img src="{{url_for('static', filename='img/nyanyi.jpg')}}">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                 <div class="col-6">
+                    <br>
+                    <br>
+                    <a href="#">
+                        <img src="{{url_for('static', filename='img/piano.jpg')}}">
+                    </a>
+                </div>
+                <div class="col-6">
+                    <br>
+                    <br>
+                    <a href="#">
+                        <img src="{{url_for('static', filename='img/electone.jpg')}}">
+                    </a>
+                </div>
+                <div class="col-12">
+                    <br>
+                    Pada usia 16, Isyana menerima beasiswa dari Pemerintah Singapura untuk belajar Pertunjukan Musik di Nanyang Academy of Fine Arts (NAFA), Singapura. Pada tahun 2013, ia memperoleh Diploma di bidang Music Performance (2013). Isyana dianugerahi beasiswa penuh untuk belajar lebih jauh di NAFA bekerjasama dengan The Royal College of Music (RCM) London, di bawah Bachelor of Music dengan Honours Funded Degree Programme. Pada tahun terakhir studinya, ia menerima Beasiswa RCM Excellence Award (2015). Pada 26 September 2015, Isyana lulus dari Nanyang Academy of Fine Arts dengan gelar "Bachelor of Music" (B.Mus) dan menerima penghargaan sebagai Lulusan Terbaik serta menerima penghargaan dari Kedutaan Besar Peru.
+
+                    Di bawah pengawasan dan bimbingan guru profesional, di antaranya: Dr. An Hsing Chen Jessica (2013-2014), Lim Yau (2013-2014), Lim Shieh Yih (2012), Joyce Khoo (2010-2012), Avip Priatna ( 2009-2010), Luana Marpanda (yang mengajarinya Electone) dan Paul H. Yoedianto (1998-2008),
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of portfolio -->
+    <a href="https://www.instagram.com/isyanasarasvati/" class="btn btn-warning btn-lg btn-block">Contact Me!</a>
+    <!-- footer -->
+    <br>
+    <section>
+        <div>
+            <div>
+                <div>
+                    <a href="http://127.0.0.1:5000/" button type="button" class="btn btn-secondary btn-lg btn-block">Back To Main Session</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of footer -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>

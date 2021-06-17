@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}Update Catatan{% endblock %}
+
+{% block content %}
+	<section class="content">
+		<div class="container">
+			<div class="row">
+				<div class="offset-md-3 col-6">
+					<form action="" method="POST">
+						<fieldset>
+							<legend >
+								Update Note
+							</legend>
+							<div class="form-group">
+								<input class="form-control" type="text" name="title" placeholder="Title" value="{{note.title}}">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" type="text" name="note" placeholder="Leave your note here" rows="10"></textarea>
+							</div>
+						</fieldset>
+						<div class="form-group">
+							<button type="button" class="btn btn-final" data-toggle="modal" data-target="#myModal">Update Note</button>
+						</div>
+						<div class="form-group">
+							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="emyModalLabel" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+								    <div class="modal-content">
+								    	<div class="modal-header">
+									        <h5 class="modal-title" id="myModalLabel">Update Note</h5>
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									        	<span aria-hidden="true">&times;</span>
+									        </button>
+								    	</div>
+								      	<div class="modal-body">
+								        	Are you sure?
+								      	</div>
+								      	<div class="modal-footer">
+									        <button type="button" class="btn btn-secondary" data-dismiss="modal">Discard changes</button>
+									        <button class="btn btn-primary">Save changes</button>
+								      	</div>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>	
+	</section>
+{% endblock %}
